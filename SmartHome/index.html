@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ajax Chart JS</title>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+		<!-- <script src='js/jquery.js'></script> -->
+		<script src='js/Chart.js'></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/fontawesome/font-awesome-ie7.min.css">
+		<![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Import Graph data scripts-->
+		<!-- <script src="jsChartSource/linechart1.js"></script> -->
+		<!-- <script src="jsChartSource/piechart1.js"></script> -->
+		<script src="jsChartSource/finalPichartMorning.js"></script>
+		<script src="jsChartSource/finalPichartDay.js"></script>
+		<script src="jsChartSource/finalPichartEvening.js"></script>
+		<script src="jsChartSource/finalPichartNight.js"></script>
+		<!-- <script src="jsChartSource/barchartFinal.js"></script> -->
+    </head>
+    <body>
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#">Smart Home Statistics</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Dashboard</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">13/01/2015<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Annotation Analysis</a></li>
+								<li><a href="#">Event Analysis</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Canvas for LineChart 13/1/2015-->
+		<div class="span6">
+			<div class="well" autocomplete="off">
+				<h3>Morning</h3>
+					<canvas id="Morning" width="530" height="370"></canvas>
+			</div>
+		</div>
+		
+		<div class="span6">
+			<div class="well" autocomplete="off">
+				<h3>Day</h3>
+					<canvas id="Day" width="530" height="370"></canvas>
+			</div>
+		</div>
+		
+		<div class="span6">
+			<div class="well" autocomplete="off">
+				<h3>Evening</h3>
+					<canvas id="Evening" width="530" height="370"></canvas>
+			</div>
+		</div>
+		
+		<div class="span6">
+			<div class="well" autocomplete="off">
+				<h3>Night</h3>
+					No Annotation Data
+			</div>
+		</div>
+    </body>
+</html>

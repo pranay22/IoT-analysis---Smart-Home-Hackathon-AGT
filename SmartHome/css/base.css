@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*!
+For SmartHome Group 1
+*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+	height: 100%;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+body {
+   height: 100%;
+    color: #666;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background: #637b85;
+    color: #fff;
+    margin-bottom: 40px;
+}
+header span {
+    font-weight: 200;
+}
+header .button {
+    font-size: 0.2em;
+    top: -6px;
+}
+ 
+/* various containers */
+.container {
+    width: 200px;
+    margin: 0 auto;
+}
+.canvas-container {
+    min-height: 300px;
+    max-height: 600px;
+    position: relative;
+}
+.widget {
+    position: relative;
+    margin-bottom: 80px;
+    background: #efefef;
+    padding: 12px;
+    margin-bottom: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.chart-legend ul {
+    list-style: none;
+    width: 100%;
+    margin: 30px auto 0;
+}
+.chart-legend li {
+    text-indent: 16px;
+    line-height: 24px;
+    position: relative;
+    font-weight: 200;
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 0.8em;
+}
+.chart-legend  li:before {
+    display: block;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    content: "";
+}
+.ship:before { background-color: #637b85; }
+.rework:before { background-color: #2c9c69; }
+.admin:before { background-color: #dbba34; }
+.prod:before { background-color: #c62f29; }
+
+
+
+
+.widget.box {
+  border: 1px solid #d9d9d9;
+}
+.widget.box .widget-header {
+  background: #f9f9f9;
+  border-bottom-color: #d9d9d9;
+  line-height: 35px;
+  padding: 0 12px;
+  margin-bottom: 0;
+}
+.widget.box .widget-header h4 {
+  margin-bottom: 0;
+}
+.widget.box .widget-header .toolbar {
+  margin-right: -5px;
+}
+.widget.box .widget-header .toolbar.no-padding {
+  margin: -2px -13px;
+}
+.widget.box .widget-header .toolbar.no-padding .btn {
+  font-size: 13px;
+  padding: 8px 7px;
+  padding-top: 8px;
+  margin-top: 1px;
+}
+.widget.box .widget-content {
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+.widget.box .widget-content.no-padding {
+  padding: 0;
+}
+.widget.box .widget-content.no-padding .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.widget.box .widget-content.widget-deeper {
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+.widget.box.box-shadow {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-bottom-color: #cccccc;
+}
+.widget.widget-closed.box .widget-header {
+  margin-bottom: -1px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.widget.widget-closed .widget-content {
+  display: none;
+}
+.widget > .divider,
+.widget .widget-content > .divider {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+}
+.widget .widget-content > .divider {
+  margin: 5px 0;
+}
+
+
+/* Responsive parts*/
+@media only screen and (min-width:300px){
+    .container {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+ 
+@media only screen and (min-width:600px){
+    .container {
+        width: 580px;
+        margin: 0 auto;
+    }
+    .third {
+        float: left;
+        width: 47.5%;
+        margin-left: 5%;
+    }
+    .third:first-child {
+        margin-left: 0;
+    }
+    .third:last-child {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+ 
+@media only screen and (min-width:960px){
+    .container {
+        width: 940px;
+    }
+    .third {
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .third:first-child {
+        margin-left: 0;
+    }
+    .third:last-child {
+        margin-right: 0;
+        margin-left: 2.5%;
+        width: 30%;
+    }
+}
+@media only screen and (min-width:1140px){
+    .container {
+        width: 1120px;
+    }
+}
+@media only screen and (min-width:1360px){
+    .container {
+        width: 1300px;
+    }
+}
+
+
+
+

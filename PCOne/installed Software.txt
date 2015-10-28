@@ -1,0 +1,14 @@
+XAMPP:
+For database-Server (NO-SQL maybe for later)
+Apache for send the generated Pythoncode to the Web)
+
+Python:
+pip install sqlalchemy
+pip install mysqldb
+
+pip install csv
+
+pilot-edit light
+
+conda update -n myenv scipy
+
