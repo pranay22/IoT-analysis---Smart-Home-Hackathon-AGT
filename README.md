@@ -5,4 +5,4 @@ SmartHome IoT dataset analysis code done at Hackathon at AGT Internatinoal
 
 1. Dimitry  
 2. Pranay Sarkar  
-3. Stefan 
+3. Stefan Seltenreich  
